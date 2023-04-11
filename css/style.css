@@ -153,8 +153,11 @@ h1 {
     font-size: 5em;
 
     background: -webkit-linear-gradient(#25d8b1, #e2bbf0);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* Safari/Chrome */
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text; /* Firefox */
+    background-clip: text;
+    color: transparent; /* Hide real text */  
 }
 
 #text {
